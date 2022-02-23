@@ -54,13 +54,13 @@ a:hover {
 
 /* LANDING SECTION */
 .front {
-  background-image: url(http://fungifood.dk/wp-content/uploads/2022/02/tregange-svampe.png);
+  background-image: url(img/tregange-svampe.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 90vh;
   z-index: -1;
-  background-color: #c9a74b;
+  background-color: #eeba2b;
 }
 
 .front #title {
