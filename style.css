@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p,
+h1,
+h2,
+h3,
+a,
+li {
+  font-family: "Arimo", sans-serif;
+}
+
+/* NAV */
+header {
+  background-color: #eeba2b;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 2rem 0 0;
+}
+
+a img {
+  max-width: 4rem;
+  padding: 1rem 0 0 1rem;
+}
+
+li {
+  list-style: none;
+  color: white;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LANDING SECTION */
+.front {
+  background-image: url(http://fungifood.dk/wp-content/uploads/2022/02/tregange-svampe.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  z-index: -1;
+  background-color: #c9a74b;
+}
+
+.front #title {
+  display: block;
+  text-align: center;
+  color: white;
+  font-size: 6rem;
+  text-transform: uppercase;
+  padding-top: 2rem;
+}
+
+.front .undertitle {
+  display: block;
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  width: 70vw;
+  margin: auto;
+  top: 88%;
+  left: 15%;
+}
+
+/* STATEMENT */
+
+.statement {
+  background-color: #a6771f;
+  color: white;
+  text-align: center;
+  padding: 4rem;
+  font-size: 3rem;
+}
+
+.containp {
+  border-top: solid white 1.5px;
+  border-bottom: solid white 1.5px;
+}
+
+.containp p {
+  padding: 4rem 0 4rem 0;
+}
+
+/* ABOUT US */
+
+#aboutus {
+  background-color: #1d6373;
+  color: white;
+  padding-top: 2rem;
+  padding-left: 2rem;
+}
+
+#aboutus h2 {
+  font-size: 2.3rem;
+  text-align: left;
+  padding-bottom: 2rem;
+}
+
+.founder {
+  display: flex;
+  gap: 3rem;
+  padding-bottom: 3rem;
+  margin-right: 3rem;
+}
+
+.imgcontainer {
+  width: 100%;
+  object-fit: cover;
+}
+
+.imgcontainer img {
+  max-width: 100%;
+}
+
+.linfo h3 {
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.linfo p {
+  font-size: 1.2rem;
+  line-height: 25px;
+}
+
+.christian,
+.louisa {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  background-color: #2f7787;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #282828;
+  color: white;
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  line-height: 2rem;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 900px) {
+  .front {
+    background-size: cover;
+    height: 100vh;
+  }
+  .front #title {
+    font-size: 4rem;
+    padding-top: 4rem;
+  }
+
+  .front .undertitle {
+    font-size: 1.5rem;
+  }
+
+  .founder {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .imgcontainer {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .statement {
+    padding: 3rem;
+    font-size: 2rem;
+  }
+
+  .containp p {
+    padding: 2.5rem 0 2.5rem 0;
+  }
+  .linfo h3 {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .linfo p {
+    font-size: 0.8rem;
+    line-height: 18px;
+  }
+  .imgcontainer {
+    width: 80%;
+  }
+}
